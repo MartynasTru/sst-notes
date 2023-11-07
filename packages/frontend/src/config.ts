@@ -1,5 +1,6 @@
 const config = {
   // Backend config
+  STRIPE_KEY: "pk_test_51MSis8GWO8y3NdYGHxQ9JjWM3Elih6bwtrzHydVJlYwIvyFkza9bad9usvI4UsMSSW9RhjFlmBsbPJ8qRzf0zUZi00OSPFY1lD",
   s3: {
     REGION: import.meta.env.VITE_REGION,
     BUCKET: import.meta.env.VITE_BUCKET,
@@ -14,6 +15,9 @@ const config = {
     APP_CLIENT_ID: import.meta.env.VITE_USER_POOL_CLIENT_ID,
     IDENTITY_POOL_ID: import.meta.env.VITE_IDENTITY_POOL_ID,
   },
+  // Frontend config
+  MAX_ATTACHMENT_SIZE: 5000000,
+  
 };
 
 export default config;
